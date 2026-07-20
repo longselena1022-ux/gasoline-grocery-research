@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Gasoline-Price Inflation and Grocery Price Changes
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="site-name">
+                AP Research
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#data">Data</a>
+                <a href="#methods">Methods</a>
+                <a href="#results">Results</a>
+                <a href="#limitations">Limitations</a>
+                <a href="#conclusion">Conclusion</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+
+            <p class="top-label">
+                AP Research Project
+            </p>
+
+            <h1>
+                Gasoline-Price Inflation and Grocery Price Changes
+            </h1>
+
+            <p class="subtitle">
+                A comparison of perishable and nonperishable food
+                categories in the United States from 2019 to 2025
+            </p>
+
+            <p class="author">
+                By Selena Long
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="primary-button"
+                    href="#results"
+                >
+                    View Results
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="research-report.pdf"
+                    target="_blank"
+                >
+                    Read Full Report
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="about">
+
+            <p class="section-label">
+                About the Study
+            </p>
+
+            <h2>
+                Research Question
+            </h2>
+
+            <p class="research-question">
+                How does gasoline-price inflation affect price changes
+                in perishable compared to nonperishable grocery
+                categories in the United States from 2019 to 2025?
+            </p>
+
+            <h3>
+                Background
+            </h3>
+
+            <p>
+                Gasoline and groceries are two major costs that many
+                families notice. Gasoline prices can change quickly
+                because of oil prices, refinery problems, supply
+                shortages, and world events.
+            </p>
+
+            <p>
+                Grocery prices usually change more slowly, but food
+                still has to be transported, refrigerated, stored,
+                and stocked. This study examined whether gasoline-price
+                inflation was connected to grocery price changes.
+            </p>
+
+            <h3>
+                Why the Study Matters
+            </h3>
+
+            <p>
+                Higher fuel costs may increase the cost of transporting
+                food. Perishable foods may be affected more because
+                they often need faster delivery and refrigeration.
+            </p>
+
+            <p>
+                This study tested whether perishable grocery categories
+                were more affected by gasoline changes than
+                nonperishable grocery categories.
+            </p>
+
+        </section>
+
+        <section id="data" class="alternate-section">
+
+            <p class="section-label">
+                Dataset
+            </p>
+
+            <h2>
+                Data Used in the Study
+            </h2>
+
+            <p>
+                The data came from the U.S. Bureau of Labor Statistics
+                Consumer Price Index database. The study used monthly
+                CPI-U data for the U.S. city average.
+            </p>
+
+            <div class="stat-cards">
+
+                <div class="stat-card">
+                    <h3>84</h3>
+                    <p>Monthly observations</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>7</h3>
+                    <p>Total CPI categories</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>2019–2025</h3>
+                    <p>Study period</p>
+                </div>
+
+            </div>
+
+            <h3>
+                Categories Included
+            </h3>
+
+            <div class="category-grid">
+
+                <div class="category-box">
+
+                    <h4>
+                        Gasoline
+                    </h4>
+
+                    <p>
+                        Gasoline, all types
+                    </p>
+
+                </div>
+
+                <div class="category-box">
+
+                    <h4>
+                        Perishable Foods
+                    </h4>
+
+                    <p>Meat and eggs</p>
+                    <p>Dairy</p>
+                    <p>Fruits and vegetables</p>
+
+                </div>
+
+                <div class="category-box">
+
+                    <h4>
+                        Nonperishable Foods
+                    </h4>
+
+                    <p>Cereals and bakery products</p>
+                    <p>Nonalcoholic beverages</p>
+                    <p>Sweets and candy</p>
+
+                </div>
+
+            </div>
+
+            <h3>
+                Missing Data
+            </h3>
+
+            <p>
+                Gasoline had no missing values. Each food category was
+                missing its October 2025 observation.
+            </p>
+
+            <p>
+                These values were estimated using time-based
+                interpolation between the months before and after
+                October 2025.
+            </p>
+
+            <a
+                class="download-button"
+                href="data.csv"
+                download
+            >
+                Download Dataset
+            </a>
+
+        </section>
+
+        <section id="methods">
+
+            <p class="section-label">
+                Methods
+            </p>
+
+            <h2>
+                How the Data Was Analyzed
+            </h2>
+
+            <div class="method-grid">
+
+                <article class="method-card">
+
+                    <span class="method-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Data Preparation
+                    </h3>
+
+                    <p>
+                        The dates were placed in monthly order and the
+                        CPI values were converted into numbers.
+                    </p>
+
+                </article>
+
+                <article class="method-card">
+
+                    <span class="method-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Trend Analysis
+                    </h3>
+
+                    <p>
+                        The study compared how gasoline and food CPI
+                        values changed between 2019 and 2025.
+                    </p>
+
+                </article>
+
+                <article class="method-card">
+
+                    <span class="method-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Correlation
+                    </h3>
+
+                    <p>
+                        Monthly percentage changes were compared to see
+                        whether gasoline and grocery prices moved
+                        together.
+                    </p>
+
+                </article>
+
+                <article class="method-card">
+
+                    <span class="method-number">
+                        04
+                    </span>
+
+                    <h3>
+                        SARIMA Models
+                    </h3>
+
+                    <p>
+                        A separate SARIMA forecasting model was created
+                        for each CPI category.
+                    </p>
+
+                </article>
+
+                <article class="method-card">
+
+                    <span class="method-number">
+                        05
+                    </span>
+
+                    <h3>
+                        VAR Model
+                    </h3>
+
+                    <p>
+                        One VAR model analyzed all seven categories
+                        together and used past values from every
+                        category.
+                    </p>
+
+                </article>
+
+                <article class="method-card">
+
+                    <span class="method-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Relationship Tests
+                    </h3>
+
+                    <p>
+                        Granger-causality tests and impulse-response
+                        functions were used to study whether gasoline
+                        changes helped predict later food-price changes.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <h3>
+                Training and Testing Periods
+            </h3>
+
+            <div class="period-grid">
+
+                <div class="period-box">
+                    <h4>Training Period</h4>
+                    <p>January 2019 through December 2024</p>
+                    <p>72 months</p>
+                </div>
+
+                <div class="period-box">
+                    <h4>Testing Period</h4>
+                    <p>January 2025 through December 2025</p>
+                    <p>12 months</p>
+                </div>
+
+            </div>
+
+            <p>
+                The final 12 months were not used to build the models.
+                They were saved to test how accurately the models
+                predicted data they had not already seen.
+            </p>
+
+        </section>
+
+        <section id="results" class="alternate-section">
+
+            <p class="section-label">
+                Results
+            </p>
+
+            <h2>
+                Main Findings
+            </h2>
+
+            <div class="finding-card">
+
+                <h3>
+                    Gasoline had the largest price swings.
+                </h3>
+
+                <p>
+                    Gasoline changed much more from month to month than
+                    the grocery categories. It dropped sharply in early
+                    2020 and then increased quickly during 2021 and 2022.
+                </p>
+
+            </div>
+
+            <div class="finding-card">
+
+                <h3>
+                    All categories increased over the study period.
+                </h3>
+
+                <p>
+                    Sweets and candy increased the most, followed by
+                    meat and eggs and nonalcoholic beverages. Food
+                    categories generally followed steadier upward
+                    trends than gasoline.
+                </p>
+
+            </div>
+
+            <div class="finding-card">
+
+                <h3>
+                    Gasoline and grocery price changes had weak
+                    relationships.
+                </h3>
+
+                <p>
+                    Most monthly correlations were close to zero. This
+                    means gasoline and grocery prices did not usually
+                    move together from one month to the next.
+                </p>
+
+            </div>
+
+            <figure>
+
+                <img
+                    src="images/correlation-chart.png"
+                    alt="Correlation between gasoline price changes and grocery price changes"
+                >
+
+                <figcaption>
+                    Correlation between each grocery category's monthly
+                    percentage change and gasoline's monthly percentage
+                    change.
+                </figcaption>
+
+            </figure>
+
+            <div class="finding-card important-finding">
+
+                <h3>
+                    Meat and eggs was the only significant category.
+                </h3>
+
+                <p>
+                    Gasoline-price changes significantly helped predict
+                    later changes in meat and egg prices. The p-value
+                    was 0.006.
+                </p>
+
+                <p>
+                    Gasoline did not significantly predict dairy,
+                    fruits and vegetables, cereals and bakery products,
+                    nonalcoholic beverages, or sweets and candy.
+                </p>
+
+            </div>
+
+            <h3>
+                Granger-Causality Results
+            </h3>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Group</th>
+                            <th>P-value</th>
+                            <th>Significant?</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Meat and Eggs</td>
+                            <td>Perishable</td>
+                            <td>0.006</td>
+                            <td>Yes</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dairy</td>
+                            <td>Perishable</td>
+                            <td>0.098</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fruits and Vegetables</td>
+                            <td>Perishable</td>
+                            <td>0.174</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cereals and Bakery</td>
+                            <td>Nonperishable</td>
+                            <td>0.126</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nonalcoholic Beverages</td>
+                            <td>Nonperishable</td>
+                            <td>0.898</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sweets and Candy</td>
+                            <td>Nonperishable</td>
+                            <td>0.134</td>
+                            <td>No</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="finding-card">
+
+                <h3>
+                    Gasoline shocks had very small effects.
+                </h3>
+
+                <p>
+                    The impulse-response results showed that grocery
+                    prices changed very little after a sudden gasoline
+                    price shock.
+                </p>
+
+                <p>
+                    All responses stayed below 0.1 CPI index points,
+                    showing that the overall effect was small.
+                </p>
+
+            </div>
+
+            <figure>
+
+                <img
+                    src="images/impulse-response-chart.png"
+                    alt="Response of grocery prices after a gasoline price shock"
+                >
+
+                <figcaption>
+                    Estimated grocery price responses after a
+                    one-standard-deviation gasoline-price shock.
+                </figcaption>
+
+            </figure>
+
+            <h3>
+                Forecasting Model Comparison
+            </h3>
+
+            <p>
+                Lower RMSE values mean that a forecasting model was more
+                accurate.
+            </p>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Better Model</th>
+                            <th>SARIMA RMSE</th>
+                            <th>VAR RMSE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Gasoline</td>
+                            <td>VAR</td>
+                            <td>31.41</td>
+                            <td>19.51</td>
+                        </tr>
+
+                        <tr>
+                            <td>Meat and Eggs</td>
+                            <td>SARIMA</td>
+                            <td>3.56</td>
+                            <td>4.21</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dairy</td>
+                            <td>VAR</td>
+                            <td>5.29</td>
+                            <td>4.98</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fruits and Vegetables</td>
+                            <td>VAR</td>
+                            <td>9.50</td>
+                            <td>7.64</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cereals and Bakery</td>
+                            <td>SARIMA</td>
+                            <td>4.92</td>
+                            <td>6.07</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nonalcoholic Beverages</td>
+                            <td>VAR</td>
+                            <td>1.19</td>
+                            <td>0.81</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sweets and Candy</td>
+                            <td>SARIMA</td>
+                            <td>1.77</td>
+                            <td>4.23</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="result-summary-grid">
+
+                <div class="result-summary">
+                    <h3>VAR Won</h3>
+                    <p>4 categories</p>
+                </div>
+
+                <div class="result-summary">
+                    <h3>SARIMA Won</h3>
+                    <p>3 categories</p>
+                </div>
+
+                <div class="result-summary">
+                    <h3>Hardest to Predict</h3>
+                    <p>Gasoline</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="limitations">
+
+            <p class="section-label">
+                Limitations
+            </p>
+
+            <h2>
+                Limits of the Study
+            </h2>
+
+            <div class="limitations-list">
+
+                <div class="limitation">
+                    <h3>Small Dataset</h3>
+                    <p>
+                        The study only included 84 monthly observations,
+                        which may make small effects harder to detect.
+                    </p>
+                </div>
+
+                <div class="limitation">
+                    <h3>Limited Variables</h3>
+                    <p>
+                        The study did not include other factors such as
+                        wages, oil prices, farming costs, interest rates,
+                        or supply-chain indexes.
+                    </p>
+                </div>
+
+                <div class="limitation">
+                    <h3>Estimated Data</h3>
+                    <p>
+                        October 2025 values for the six food categories
+                        were estimated instead of directly observed.
+                    </p>
+                </div>
+
+                <div class="limitation">
+                    <h3>Unusual Events</h3>
+                    <p>
+                        The pandemic and avian influenza may have
+                        affected gasoline and food prices during the
+                        study period.
+                    </p>
+                </div>
+
+                <div class="limitation">
+                    <h3>No Proof of Cause</h3>
+                    <p>
+                        Correlation and Granger causality show
+                        relationships, but they do not prove that
+                        gasoline directly caused food-price changes.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="conclusion" class="alternate-section">
+
+            <p class="section-label">
+                Conclusion
+            </p>
+
+            <h2>
+                What the Study Found
+            </h2>
+
+            <p class="conclusion-highlight">
+                Gasoline prices were not the main reason grocery prices
+                changed from 2019 to 2025.
+            </p>
+
+            <p>
+                Gasoline-price inflation had only a small effect on most
+                grocery categories. Meat and eggs was the only category
+                with a clear predictive relationship to gasoline prices.
+            </p>
+
+            <p>
+                Perishable foods may have been affected slightly more,
+                but the overall difference between perishable and
+                nonperishable foods was still small.
+            </p>
+
+            <p>
+                Neither forecasting model worked best for every
+                category. VAR performed better for four categories,
+                while SARIMA performed better for three categories.
+            </p>
+
+            <p>
+                Other factors such as farming costs, labor, packaging,
+                supply problems, and overall inflation also affected
+                grocery prices.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="primary-button dark-button"
+                    href="research-report.pdf"
+                    target="_blank"
+                >
+                    Read Full Research Report
+                </a>
+
+                <a
+                    class="outline-button"
+                    href="data.csv"
+                    download
+                >
+                    Download Research Data
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="references">
+
+            <p class="section-label">
+                Sources
+            </p>
+
+            <h2>
+                References
+            </h2>
+
+            <p>
+                U.S. Bureau of Labor Statistics. Consumer Price Index
+                databases and public data files.
+            </p>
+
+            <p>
+                U.S. Bureau of Labor Statistics. Consumer Price Index
+                for All Urban Consumers: U.S. city average, by
+                expenditure category.
+            </p>
+
+            <p>
+                pandas development team. pandas documentation.
+            </p>
+
+            <p>
+                statsmodels developers. statsmodels documentation.
+            </p>
+
+            <p>
+                Matplotlib development team. Matplotlib documentation.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            AP Research Project | Selena Long | 2026
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
