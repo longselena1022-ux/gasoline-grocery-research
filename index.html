@@ -24,7 +24,7 @@
 
             <nav class="side-navigation">
 
-                <a href="#overview" class="active-link">
+                <a href="#overview">
                     <span>01</span>
                     Overview
                 </a>
@@ -1159,41 +1159,43 @@
 
     </main>
 <script>
-    const sections = document.querySelectorAll(
-        "section[id]"
-    );
+    const sections = document.querySelectorAll("section[id]");
+    const navigationLinks = document.querySelectorAll(".side-navigation a");
 
-    const navigationLinks = document.querySelectorAll(
-        ".side-navigation a"
-    );
-
-    function updateActiveLink() {
-        let currentSection = "overview";
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 180;
-
-            if (window.scrollY >= sectionTop) {
-                currentSection = section.id;
-            }
-        });
-
+    function setActiveLink(sectionId) {
         navigationLinks.forEach(link => {
             link.classList.remove("active-link");
 
-            if (
-                link.getAttribute("href") ===
-                "#" + currentSection
-            ) {
+            if (link.getAttribute("href") === "#" + sectionId) {
                 link.classList.add("active-link");
             }
         });
     }
 
-    window.addEventListener(
-        "scroll",
-        updateActiveLink
-    );
+    function updateActiveLink() {
+        let currentSection = "overview";
+
+        sections.forEach(section => {
+            const position = section.getBoundingClientRect();
+
+            if (position.top <= 220) {
+                currentSection = section.id;
+            }
+        });
+
+        setActiveLink(currentSection);
+    }
+
+    navigationLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            const sectionId = this.getAttribute("href").substring(1);
+            setActiveLink(sectionId);
+        });
+    });
+
+    window.addEventListener("scroll", updateActiveLink);
+    window.addEventListener("load", updateActiveLink);
+    window.addEventListener("hashchange", updateActiveLink);
 
     updateActiveLink();
 </script>
