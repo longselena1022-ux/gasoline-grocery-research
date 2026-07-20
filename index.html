@@ -1159,46 +1159,43 @@
 
     </main>
 <script>
-    const sections = document.querySelectorAll("section[id]");
-    const navigationLinks = document.querySelectorAll(".side-navigation a");
+const sections = document.querySelectorAll("section[id]");
+const links = document.querySelectorAll(".side-navigation a");
 
-    function setActiveLink(sectionId) {
-        navigationLinks.forEach(link => {
-            link.classList.remove("active-link");
+const observer = new IntersectionObserver(
+(entries) => {
 
-            if (link.getAttribute("href") === "#" + sectionId) {
-                link.classList.add("active-link");
-            }
-        });
-    }
+    entries.forEach(entry => {
 
-    function updateActiveLink() {
-        let currentSection = "overview";
+        if(entry.isIntersecting){
 
-        sections.forEach(section => {
-            const position = section.getBoundingClientRect();
+            links.forEach(link=>{
 
-            if (position.top <= 220) {
-                currentSection = section.id;
-            }
-        });
+                link.classList.remove("active-link");
 
-        setActiveLink(currentSection);
-    }
+                if(
+                    link.getAttribute("href") ===
+                    "#" + entry.target.id
+                ){
+                    link.classList.add("active-link");
+                }
 
-    navigationLinks.forEach(link => {
-        link.addEventListener("click", function () {
-            const sectionId = this.getAttribute("href").substring(1);
-            setActiveLink(sectionId);
-        });
+            });
+
+        }
+
     });
 
-    window.addEventListener("scroll", updateActiveLink);
-    window.addEventListener("load", updateActiveLink);
-    window.addEventListener("hashchange", updateActiveLink);
+},
+{
+    threshold:0.35
+});
 
-    updateActiveLink();
+sections.forEach(section=>{
+    observer.observe(section);
+});
 </script>
+ 
 </body>
 
 </html>
