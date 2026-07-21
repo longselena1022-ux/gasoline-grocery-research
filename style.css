@@ -438,11 +438,6 @@ h1 {
     font-weight: 800;
 }
 
-.gasoline-row .category-icon {
-    color: white;
-    background-color: var(--accent);
-}
-
 .category-row h3 {
     margin: 2px 0 0;
     font-size: 17px;
