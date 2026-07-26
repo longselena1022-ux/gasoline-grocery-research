@@ -1060,31 +1060,33 @@ footer {
 .graph-grid {
     margin-top: 60px;
     display: grid;
-    gap: 40px;
+    gap: 45px;
 }
 
 .graph-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     color: white;
 }
 
 .graph-card img {
     width: 100%;
-    max-width: 700px;
-    height: auto;
+    height: 420px;
     display: block;
-    margin: 0 auto;
-    background: white;
+    object-fit: contain;
+    background-color: white;
     border-radius: 8px;
 }
 
 .graph-card h3 {
     margin: 16px 0 8px;
-    font-size: 28px;
+    font-size: 22px;
     color: white;
 }
 
 .graph-card p {
     margin: 0;
     color: #c7d2f0;
-    font-size: 15px;
+    font-size: 14px;
 }
