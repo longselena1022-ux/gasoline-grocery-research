@@ -1055,3 +1055,36 @@ footer {
     }
 }
 
+/* Results graph gallery */
+
+.graph-grid {
+    margin-top: 60px;
+    display: grid;
+    gap: 40px;
+}
+
+.graph-card {
+    color: white;
+}
+
+.graph-card img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+}
+
+.graph-card h3 {
+    margin: 16px 0 8px;
+    font-size: 28px;
+    color: white;
+}
+
+.graph-card p {
+    margin: 0;
+    color: #c7d2f0;
+    font-size: 15px;
+}
